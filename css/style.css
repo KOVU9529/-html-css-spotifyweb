@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.app-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+main{
+    background-color: aqua;
+    width: 100%;
+    height:calc(100% - 100px);
+    display: flex;
+}
+
+/*LEFT-NAV*/
+
+.left-nav{
+    width: 250px ;
+    height: 100%;
+    background-color: #000000;
+    overflow-y: hidden;
+    color: #626262;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.spotifyleft{
+    height: 80px;
+    width: 100%;
+    padding-left: 10px;
+    padding-top: 20px;
+} 
+.fa-brands.fa-spotify{
+    display: none;
+}
+img{
+    width: 50%;
+    height: 50%;
+}
+.left-nav .home{
+    border-left: 2px solid #9ce62a;
+    padding-left: 18px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.find{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.library{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.fa-solid.fa-plus{
+    background-color: #a3a3a3;
+    padding: 8px;
+}
+.left-nav h2{
+    color: white;
+    margin-bottom: 10px;
+}
+.left-nav ul{
+    list-style: none;
+}
+li{
+    padding-top: 10px;
+}
+.downloadleft{
+    padding-bottom:  10px;
+}
+.Doe{
+    border-top: 1px solid #626262;
+    padding: 10px 0;
+}
+.Doe span{
+    color: white;
+}
+.lefttwo{
+    padding-left: 20px;
+}
+.leftthree{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 90px;
+}
+
+/*MAIN-CONTENT*/
+
+.main-content{
+    width: calc(100% - 250px);
+    background-color: burlywood;
+    overflow-y: auto;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    height: 100px;
+    overflow-y: hidden;
+    background-color: #282828;
+}
+.upgrade-bunner{
+    position: fixed;
+    font-size: 20px;
+    top: 0%;
+    right: 0%;
+    height: 80px;
+    width: calc( 100% - 250px );
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media screen and ( max-width:600px ){
+    .left-nav{
+        width: 60px;
+    }
+    .leftone span {
+        display: none;
+    }
+    .spotifyleft img{
+        display:none;
+    } 
+    .spotifyleft .fa-brands.fa-spotify{
+        display: block;
+        color: white;
+        padding-left: 10px;
+    }
+    .left-nav .home{
+        border-left: none;
+        padding-left: 20px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    .leftone{
+        margin-top: -40px;
+    }
+    .lefttwo{
+        display: none;
+    }
+    .leftthree span{ 
+        display: none;
+    }
+    .Doe{
+        border-top: none;
+        padding: 10px 0;
+    }
+
+    /*main*/
+
+    .main-content{
+        width: calc(100% - 60px);
+    }
+}
+    
