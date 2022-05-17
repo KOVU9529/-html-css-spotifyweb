@@ -7,6 +7,9 @@
     width: 100%;
     height: 100vh;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+}
 main{
     background-color: aqua;
     width: 100%;
@@ -69,6 +72,18 @@ img{
 li{
     padding-top: 10px;
 }
+li:hover{
+    color: white;
+}
+.home:hover{
+    color: white;
+} 
+.find:hover{
+    color: white;
+}
+.library:hover{
+    color: white;
+}
 .downloadleft{
     padding-bottom:  10px;
 }
@@ -87,13 +102,131 @@ li{
     padding-right: 20px;
     margin-top: 90px;
 }
+span:hover{
+    color: white;
+}
 
 /*MAIN-CONTENT*/
 
 .main-content{
     width: calc(100% - 250px);
-    background-color: burlywood;
+    background-color: #141922;
     overflow-y: auto;
+}
+.main-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+.main-menu li {
+    list-style: none;
+    padding: 5px;
+}
+.main-menu li a{
+    text-decoration: none;
+    color: #64676c;
+}
+.black-div{
+    background-color: #141922;
+    width: 50px;
+    height: 1px;
+    padding-top: 0 ;
+    padding-bottom: 0;
+    padding-left: 30px;
+}
+.green-div{
+    background-color: #9ce62a;
+    width: 50px;
+    height: 1px;
+}
+.column-main{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+.column{
+    width: calc(96%/6);
+}
+.main-content h2,h3{
+    color:white;
+    padding: 20px 0;
+}
+.main-content h4{
+    color: #64676c;
+}
+.column .card img{
+    width: 100%;
+}
+.column-main2{
+    display: flex;
+    justify-content: space-between;   
+    width: 35%;
+    text-align: center;
+}
+.container-father{
+    width: 100%;
+}
+.container{
+    width: 98%;
+    margin: 0 auto;
+}
+.column2 .card img{
+    width: 100%;
+}
+.column2{
+    width: calc(96%/2);
+    padding-top: 10px;
+}
+.column2 .card3 img{
+    width: 100%;
+}
+.card3{
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+/*hover*/
+
+/*main:hover*/
+
+img:hover{
+    opacity: 0.5;
+}
+.fa-regular.fa-circle-play{
+    display: none;
+}
+
+/*upgrade:hover*/
+
+.upgrade-bunner a:hover{
+    transform: scale(1.1);
+}
+
+/*footer:hover*/
+
+.line-green:hover{
+    background-color: #9ce62a;
+}
+.green-line-time:hover{
+    background-color: #9ce62a;
+}
+.player .fa-solid:hover{
+    transform: scale(1.5);
+}
+.main-menu li a:hover{
+    color: white;
+}
+.downloadleft:hover{
+    color: white;
+}
+.footer-card i:hover{
+    color: white;
+}
+.footer-card h4:hover{
+    color: white;
+    text-decoration: underline;
 }
 
 /*FOOTER*/
@@ -102,8 +235,127 @@ footer{
     width: 100%;
     height: 100px;
     overflow-y: hidden;
-    background-color: #282828;
+    background-color:#282828;
 }
+.container-footer{
+    display: flex;
+    width: 99%;
+    margin: auto;
+}
+.nav-footer{
+    display: flex;
+    align-items: center;
+    width: calc(100%/3);
+}
+.footer-card{
+    width: 100px;
+    height: 100px;
+}
+.footer-card img{
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+.footer-card h3{
+    margin: 0%;
+}
+.footer-card h4{
+    margin-top: -18px;
+    color: #737373;
+}
+.footer-card i{
+    padding-top: 25px;
+    color: #737373;
+}
+.footer-center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+}
+.fa-solid.fa-shuffle,
+.fa-solid.fa-backward-step,
+.fa-solid.fa-circle-play,
+.fa-solid.fa-forward-step,.fa-solid.fa-arrow-rotate-right{
+    color: white;
+}
+
+
+
+
+.player i{
+    padding: 0 5px;
+}
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number span{
+    color: white;
+    padding: 0 5px;
+}
+.line-time{
+    background-color: #a3a3a3;
+    width: 300px;
+    height: 2px;
+}
+.green-line-time{
+    background-color: white;
+    width: 50px;
+    height: 2px;
+}
+.line-small{
+    background-color: #a3a3a3;
+    width: 100px;
+    height: 2px;
+}
+.line-green{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: white;
+    width: 50px;
+    height: 2px;
+}
+.fa-solid.fa-bars,
+.fa-solid.fa-tv,
+.fa-solid.fa-volume-high{
+    color: white;
+    padding: 0 5px;
+}
+.nav-footer:first-of-type{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-footer.second{
+    align-items: center;
+}
+.nav-footer:last-of-type{
+    display: flex;
+    justify-content: flex-end;
+}
+.green-line-time{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.circle{
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    opacity: 0;
+}
+.circle:hover{
+    opacity: 1;
+}
+
+
+
+/*UPGRADE-BUNNER*/
+
 .upgrade-bunner{
     position: fixed;
     font-size: 20px;
@@ -112,8 +364,63 @@ footer{
     height: 80px;
     width: calc( 100% - 250px );
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(8, 11, 18, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
+.upgrade-bunner a{
+    border: 1px solid gray;
+    border-radius: 20px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 10px;   
+    margin-right: 7px;
+}
+
+@media screen and (max-width:1100px) {
+    .main-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .main-menu li {
+        width: calc(90%/5);
+        list-style: none;
+        padding: 5px;
+    }
+    .column-main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column{
+        width: calc(96%/4);
+        text-align: center;
+    }
+}  
+@media screen and (max-width:700px) {
+    .main-menu{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 90px;
+    }
+    .main-menu li {
+        width: calc(90%/3);
+        list-style: none;
+        padding: 5px;
+    }
+    .column-main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .column{
+        width: calc(96%/2);
+    }
+}  
 @media screen and ( max-width:600px ){
     .left-nav{
         width: 60px;
@@ -148,11 +455,15 @@ footer{
         border-top: none;
         padding: 10px 0;
     }
-
-    /*main*/
-
+    .main-menu li {
+        width: calc(90%/4);
+        list-style: none;
+        padding: 5px;
+    }
+    .upgrade-bunner{
+        width: calc(100% - 60px);
+    }
     .main-content{
         width: calc(100% - 60px);
     }
 }
-    
