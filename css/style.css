@@ -11,7 +11,6 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 main{
-    background-color: aqua;
     width: 100%;
     height:calc(100% - 100px);
     display: flex;
@@ -21,7 +20,7 @@ main{
 
 .left-nav{
     width: 250px ;
-    height: 100%;
+    height: calc(100%-100px);
     background-color: #000000;
     overflow-y: hidden;
     color: #626262;
@@ -83,18 +82,22 @@ li:hover{
 }
 .Doe{
     border-top: 1px solid #626262;
-    padding: 10px 0;
+    padding-top: 10px ;
 }
 .Doe span{
     color: white;
 }
+.leftone{
+    height: 120px;
+}
 .lefttwo{
     padding-left: 20px;
+    height: calc(100% - 300px);
 }
 .leftthree{
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 90px;
+    height: 100px;
 }
 
 /*MAIN-CONTENT*/
@@ -151,8 +154,8 @@ li:hover{
 }
 .column-main2{
     display: flex;
-    justify-content: space-between;   
-    width: 35%;
+    justify-content: flex-start;   
+    width: 100%;
     text-align: center;
 }
 .container-father{
@@ -166,8 +169,9 @@ li:hover{
     width: 100%;
 }
 .column2{
-    width: calc(96%/2);
+    width: calc(96%/6);
     padding-top: 10px;
+    padding-right: 10px;
 }
 .column2 .card3 img{
     width: 100%;
@@ -204,7 +208,7 @@ footer{
 .nav-footer{
     display: flex;
     align-items: center;
-    width: calc(100%/3);
+    width: calc(100%/3)
 }
 .footer-card{
     width: 100px;
@@ -249,6 +253,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 .number span{
     color: white;
@@ -256,12 +261,12 @@ footer{
 }
 .line-time{
     background-color: #a3a3a3;
-    width: 300px;
+    width: 70%;
     height: 2px;
 }
 .green-line-time{
     background-color: white;
-    width: 50px;
+    width: 20%;
     height: 2px;
 }
 .line-small{
@@ -416,6 +421,12 @@ img:hover + .fa-regular.fa-circle-play.fa-2x{
         padding:0 10px;
         text-align: center;
     }
+    .column2{
+        width: calc(96%/4);
+        padding:0 10px;
+        text-align: center;
+    }
+
     .column-main2{
         display: flex;
         justify-content: flex-start;
@@ -442,7 +453,10 @@ img:hover + .fa-regular.fa-circle-play.fa-2x{
         justify-content: space-between;
     }
     .column{
-        width: calc(96%/2);
+        width: calc(98%/2);
+    }
+    .column2{
+        width: calc(98%/2);
     }
     .three{
         display: flex;
@@ -452,7 +466,7 @@ img:hover + .fa-regular.fa-circle-play.fa-2x{
         padding-left: 20px;
     }
     .footer-card .three i{
-        padding:0%
+        padding:0%;
     }
 }  
 @media screen and ( max-width:600px ){
@@ -494,10 +508,17 @@ img:hover + .fa-regular.fa-circle-play.fa-2x{
         list-style: none;
         padding: 5px;
     }
-    .upgrade-bunner{
+    .main-content{
         width: calc(100% - 60px);
     }
-    .main-content{
+    .column2{
+        width: calc(98%/2);
+    }
+    .three {
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .upgrade-bunner{
         width: calc(100% - 60px);
     }
 }
