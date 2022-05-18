@@ -48,6 +48,9 @@ img{
     padding-bottom: 10px;
     padding-top: 10px;
 }
+.left-nav .leftone .home{
+    color: rgba(255, 255, 255, 0.7);
+}
 .find{
     padding-left: 20px;
     padding-bottom: 10px;
@@ -75,15 +78,6 @@ li{
 li:hover{
     color: white;
 }
-.home:hover{
-    color: white;
-} 
-.find:hover{
-    color: white;
-}
-.library:hover{
-    color: white;
-}
 .downloadleft{
     padding-bottom:  10px;
 }
@@ -101,9 +95,6 @@ li:hover{
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 90px;
-}
-span:hover{
-    color: white;
 }
 
 /*MAIN-CONTENT*/
@@ -181,52 +172,20 @@ span:hover{
 .column2 .card3 img{
     width: 100%;
 }
+.card{
+    position: relative;
+}
 .card3{
     border-radius: 50%;
     overflow: hidden;
     position: relative;
 }
-
-/*hover*/
-
-/*main:hover*/
-
-img:hover{
-    opacity: 0.5;
-}
-.fa-regular.fa-circle-play{
-    display: none;
-}
-
-/*upgrade:hover*/
-
-.upgrade-bunner a:hover{
-    transform: scale(1.1);
-}
-
-/*footer:hover*/
-
-.line-green:hover{
-    background-color: #9ce62a;
-}
-.green-line-time:hover{
-    background-color: #9ce62a;
-}
-.player .fa-solid:hover{
-    transform: scale(1.5);
-}
-.main-menu li a:hover{
-    color: white;
-}
-.downloadleft:hover{
-    color: white;
-}
-.footer-card i:hover{
-    color: white;
-}
-.footer-card h4:hover{
-    color: white;
-    text-decoration: underline;
+.fa-regular.fa-circle-play.fa-2x{
+   color: white;
+   position: absolute;
+   top: 40.5%;
+   left: 43%;
+   opacity: 0;
 }
 
 /*FOOTER*/
@@ -280,10 +239,9 @@ footer{
 .fa-solid.fa-forward-step,.fa-solid.fa-arrow-rotate-right{
     color: white;
 }
-
-
-
-
+.player{
+    padding-bottom: 10px;
+}
 .player i{
     padding: 0 5px;
 }
@@ -348,11 +306,6 @@ footer{
     border-radius: 50%;
     opacity: 0;
 }
-.circle:hover{
-    opacity: 1;
-}
-
-
 
 /*UPGRADE-BUNNER*/
 
@@ -379,6 +332,68 @@ footer{
     margin-right: 7px;
 }
 
+/*hover*/
+
+/*left-nav:hover*/
+
+.downloadleft:hover{
+    color: white;
+}
+span:hover{
+    color: white;
+}
+.leftone .home:hover{
+    color: white;
+} 
+.find:hover{
+    color: white;
+}
+.library:hover{
+    color: white;
+}
+
+/*main:hover*/
+
+.main-menu li a:hover{
+    color: white;
+}
+.container img:hover{
+    opacity: 0.6;
+}
+img:hover + .fa-regular.fa-circle-play.fa-2x{
+    opacity: 1;
+}
+/*upgrade:hover*/
+
+.upgrade-bunner a:hover{
+    transform: scale(1.1);
+}
+
+/*footer:hover*/
+
+.line-green:hover{
+    background-color: #9ce62a;
+}
+.green-line-time:hover{
+    background-color: #9ce62a;
+}
+.player .fa-solid:hover{
+    transform: scale(1.5);
+}
+.footer-card i:hover{
+    color: white;
+}
+.footer-card h4:hover{
+    color: white;
+    text-decoration: underline;
+}
+.green-line-time:hover > .circle{
+    opacity: 1;
+}
+.line-green:hover > .circle{
+    opacity: 1;
+}
+
 @media screen and (max-width:1100px) {
     .main-menu{
         display: flex;
@@ -394,10 +409,19 @@ footer{
     .column-main{
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
     .column{
         width: calc(96%/4);
+        padding:0 10px;
         text-align: center;
+    }
+    .column-main2{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .column2{
+        padding: 0 5px;
     }
 }  
 @media screen and (max-width:700px) {
@@ -419,6 +443,16 @@ footer{
     }
     .column{
         width: calc(96%/2);
+    }
+    .three{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .footer-card .three i{
+        padding:0%
     }
 }  
 @media screen and ( max-width:600px ){
